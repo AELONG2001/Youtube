@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/font-icon/themify-icons-font (1)/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/icon-Boxicons/boxicons-2.0.9/boxicons-2.0.9/css/boxicons.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="./assets/main.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="slider_bar bar-active">
+            <div class="slider_bar-content">
+               <div class="slider_bar-list-first">
+                    <ul class="slider_bar-list">
+                        <li class="slider_bar-item active">
+                            <i class="bx bxs-home bxf-home"></i>
+                            <p class="slider_bar-description">Trang chủ</p>
+                        </li>
+
+                        <li class="slider_bar-item">
+                            <i class="bx bxs-compass bxf-compass"></i>
+                            <p class="slider_bar-description">Khám phá</p>
+                        </li>
+
+                        <li class="slider_bar-item">
+                            <i class="bx bxl-youtube bxf-youtube"></i>
+                            <p class="slider_bar-description">Kênh đăng kí</p>
+                        </li>
+
+                    </ul>
+               </div>
+
+                <div class="slider_bar-list-second">
+                    <ul class="slider_bar-list">
+                        <li class="slider_bar-item">
+                            <i class="bx  bxs-videos"></i>
+                            <p class="slider_bar-description">Thư viện</p>
+                        </li>
+    
+                        <li class="slider_bar-item">
+                            <i class="bx bx-history"></i>
+                            <p class="slider_bar-description">Video đã xem</p>
+                        </li>
+    
+                        <li class="slider_bar-item">
+                            <i class="bx bx-caret-right-square"></i>
+                            <p class="slider_bar-description">Video của bạn</p>
+                        </li>
+
+                        <li class="slider_bar-item">
+                            <i class="bx bxs-time-five"></i>
+                            <p class="slider_bar-description">Xem sau</p>
+                        </li>
+
+                        <li class="slider_bar-item">
+                            <i class="bx bxs-like"></i>
+                            <p class="slider_bar-description">Video đã thích</p>
+                        </li>
+    
+                    </ul>
+                </div>
+
+                <div class="slider_bar-list-third">
+                    <h4 class="slider_bar-list-title">Kênh đăng ký</h4>
+                    <ul class="slider_bar-list slider_bar-list-pd">
+                        <li class="slider_bar-item">
+                            <div class="slider_bar-live">
+                                <i class="bx bx-station"></i>
+                            </div>
+                            <img src="./assets/img/AE_LONG.jpg" alt="channel-avatar" class="slider_channel-avt">
+                            <p class="slider_bar-description">Long HD</p>
+                        </li>
+    
+                        <li class="slider_bar-item">
+                            <div class="slider_bar-live">
+                                <i class="bx bx-station"></i>
+                            </div>
+                            <img src="./assets/img/f8-myfavourite.jpg" alt="channel-avatar" class="slider_channel-avt">
+                            <p class="slider_bar-description">F8 Official</p>
+                        </li>
+    
+                        <li class="slider_bar-item">
+                            <div class="slider_bar-live">
+                                <i class="bx bx-station"></i>
+                            </div>
+                            <img src="./assets/img/freecodecamp.jpg" alt="channel-avatar" class="slider_channel-avt">
+                            <p class="slider_bar-description">freeCodeCamp.org</p>
+                        </li>
+
+                        <li class="slider_bar-item">
+                            <img src="./assets/img/pham-huy-hoang.jpg" alt="channel-avatar" class="slider_channel-avt">
+                            <p class="slider_bar-description">Phạm Huy Hoàng</p>
+                        </li>
+
+                        <li class="slider_bar-item">
+                            <img src="./assets/img/laptrinhvienTV.jpg" alt="channel-avatar" class="slider_channel-avt">
+                            <p class="slider_bar-description">Lập Trình Viên TV</p>
+                        </li>
+
+                        <li class="slider_bar-item item-change">
+                            <div class="slider_bar-live">
+                                <i class="bx bx-station"></i>
+                            </div>
+                            <img src="./assets/img/khanh-hung.jpg" alt="channel-avatar" class="slider_channel-avt">
+                            <p class="slider_bar-description">Khánh Hùng - Đời sống lập trình viên</p>
+                        </li>
+
+                        <li class="slider_bar-item item-change">
+                            <img src="./assets/img/minh-bup-be.jpg" alt="channel-avatar" class="slider_channel-avt">
+                            <p class="slider_bar-description">Minh Búp Bê</p>
+                        </li>
+
+                        <li class="slider_bar-item item-change">
+                            <img src="./assets/img/le-gia-huy.jpg" alt="channel-avatar" class="slider_channel-avt">
+                            <p class="slider_bar-description">Lê Gia Huy</p>
+                        </li>
+
+                        <li class="slider_bar-item item-change">
+                            <img src="./assets/img/tuan-can.jpg" alt="channel-avatar" class="slider_channel-avt">
+                            <p class="slider_bar-description">Tuấn Cận</p>
+                        </li>
+
+                        <li id="item-js" class="slider_bar-item">
+                            <i class="bx bx-chevron-down"></i>
+                            <p class="slider_bar-description btn_click-first btn_click-second">Hiển thị thêm</p>
+                        </li>
+    
+                    </ul>
+                </div>
+
+                <div class="slider_bar-list-fourth">
+                    <h4 style= "max-width: 180px;" class="slider_bar-list-title">Dịch vụ khác của youtube</h4>
+                    <ul class="slider_bar-list slider_bar-list-pd">
+                        <li class="slider_bar-item">
+                            <i class="bx  bx-code-alt"></i>
+                            <p class="slider_bar-description">Lập trình</p>
+                        </li>
+    
+                        <li class="slider_bar-item">
+                            <i class="bx bx-station bxf-station"></i>
+                            <p class="slider_bar-description">Sự kiện trực tiếp</p>
+                        </li>
+    
+                        <li class="slider_bar-item">
+                            <i class="bx bxs-medal"></i>
+                            <p class="slider_bar-description">Thể thao</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="slider_bar-list-fifth">
+                    <ul class="slider_bar-list">
+                        <li class="slider_bar-item">
+                            <i class="bx  bxs-cog"></i>
+                            <p class="slider_bar-description">Cài đặt</p>
+                        </li>
+    
+                        <li class="slider_bar-item">
+                            <i class="bx bxs-flag"></i>
+                            <p class="slider_bar-description">Lịch sử báo cáo</p>
+                        </li>
+    
+                        <li class="slider_bar-item">
+                            <i class="bx bxs-help-circle"></i>
+                            <p class="slider_bar-description">Trợ giúp</p>
+                        </li>
+
+                        <li class="slider_bar-item">
+                            <i class="bx bxs-message-error"></i>
+                            <p class="slider_bar-description">Gửi phản hồi</p>
+                        </li>
+    
+                    </ul>
+                </div>
+
+                <div class="slider_bar-list-sixth">
+                    <li class="slider_bar-item-info">
+                        <a href="">Giới thiệu</a>
+                        <a href="">Báo chí</a>
+                        <a href="">Bản quyền</a>
+                        <a href="">Liên hệ với chúng tôi</a>
+                        <a href="">Người sáng tạo</a>
+                        <a href="">Quảng cáo</a>
+                        <a href="">Nhà phát triển</a>
+                    </li>
+                       
+                    <div style="margin-top: 12px;" class="spacee"></div>
+                     
+                    <li class="slider_bar-item-info">
+                        <a href="">Điều khoản</a>
+                        <a href="">Quyền riêng tư</a>
+                        <a href="">Chính sách và an toàn</a>
+                        <a href="">Cách Youtube hoạt động</a>
+                        <a href="">Thử các tính năng mới</a>
+                    </li>
+
+                    <span class="info-bar-copyright">
+                        <i class="bx bx-copyright bxf-copyright"></i>
+                        <p>2021 - Long</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul class="header_list-left">
+                <li class="list_left-item nav-bar-click">
+                    <i class="header_list-icon ti-menu"></i>
+                    <span class="btn-click"></span>
+                </li>
+
+                <li class="list_left-item">
+                    <a href="">
+                        <img src="./assets/img/logo.png" alt="Youtube VN" class="header_logo">
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="header_list-center">
+                <li class="list_center-item">
+                    <input type="text" name="" id="" class="input-search" placeholder="Tìm kiếm">
+                </li>
+
+                <li class="list_center-item list_center-item-keyboard">
+                   <div class="btn-search">
+                       <i class="btn_search-icon ti-search"></i>
+                   </div>
+                   <div class="btn-keyboard">
+                       <img src="./assets/img/keyboard.gif" alt="keyboard" class="icon-keyboard">
+                   </div>
+                </li>
+
+                <li class="list_center-item">
+                    <div class="header_microphone item-mic">
+                        <i class="bx bxs-microphone"></i>
+                        <span class="btn-click-2"></span>
+                    </div>
+                    <!-- Modal microphone -->
+                    <div class="modal_mic">
+                        <div class="overlay-mic">
+                        </div>
+
+                        <div class="modal_mic-content">
+                            <div class="mic_close">
+                                <i class="bx bx-x btn-x"></i>
+                            </div>
+                            <h3 class="mic_title">Tôi chưa nghe rõ.Mời bạn nói lại</h3>
+                            <div class="mic_box">
+                                <i class="bx bxs-microphone btn-mic"></i>
+                            </div>
+                            <p class="mic_description">Nhấp vào micrô để thử lại</p>         
+                        </div>  
+                    </div>
+                   
+                </li>
+            </ul>
+
+            <ul class="header_list-right">
+                <li class="list_right-item item-videos">
+                   <i class="icon-videos bx bxs-video-plus"></i>
+                   <span class="btn-click-3"></span>
+                   <ul class="videos_list-down">
+                       <li class="videos_item">
+                           <i class="bx bx-movie-play"></i>
+                           <p class="videos_description">Tải video lên</p>
+                       </li>
+
+                       <li class="videos_item">
+                          <i class="bx bx-station btf-station"></i>
+                          <p class="videos_description">Phát trực tiếp</p>
+                    </li>
+                   </ul>
+                </li>
+
+                <li class="list_right-item item-grid">
+                    <i class="bx bxs-grid icon-grid"></i>
+                    <span class="btn-click-4"></span>
+                    <div class="grid_down">
+                        <ul class="grid_list-down">
+                            <li class="grid_item-down">
+                                <a href="" class="grid_link-down">
+                                    <i class="bx bxs-tv"></i>
+                                    <p class="grid_description">Youtube TV</p>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="grid_list-down">
+                            <li class="grid_item-down">
+                                <a href="" class="grid_link-down">
+                                    <i class="bx bx-play-circle"></i>
+                                    <p class="grid_description">Youtube Music</p>
+                                </a>
+                            </li>
+
+                            <li class="grid_item-down">
+                                <a href="" class="grid_link-down">
+                                    <i class="bx bxl-youtube"></i>
+                                    <p class="grid_description">Youtube Kids</p>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="grid_list-down">
+                            <li class="grid_item-down">
+                                <a href="" class="grid_link-down">
+                                    <i class="bx bxl-youtube"></i>
+                                    <p class="grid_description">Học viện sáng tạo</p>
+                                </a>
+                            </li>
+
+                            <li class="grid_item-down">
+                                <a href="" class="grid_link-down">
+                                    <i class="bx bxl-youtube"></i>
+                                    <p class="grid_description">Youtube dành cho Nghệ sĩ</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="list_right-item item-bell">
+                    <i class="bx bxs-bell"></i>
+                    <span class="btn-click-5"></span>
+                    <div class="bell_down">
+                        <ul class="bell_down-header">
+                            <h4 class="bell_down-title">Thông báo</h4>
+                            <i class="bx bxs-cog bxf-cog"></i>
+                        </ul>
+                        <div class="bell_down-scroll">
+                            <ul class="bell_down-content">
+                                <li class="bell_down-item">
+                                  <img src="./assets/img/f8-myfavourite.jpg" alt="Chanel avatar" class="bell_down-img-first">
+                                </li>
+
+                                <li class="bell_down-item f-m-bell_content">
+                                   <p class="bell_down-description">Lần trở lại này F8 sẽ làm gì cho các bạn? Học Lập trình để đi làm tại F8 nào</p>
+                                   <span class="bell_down-sub-description"> 1 giờ trước</span>
+                                </li>
+
+                                <li class="bell_down-item">
+                                   <img src="./assets/img/A_Son-f8.png" alt="Avatar Description Channel" class="bell_down-img-second">
+                                </li>
+
+                                <li class="bell_down-item">
+                                   <i class="bx bx-dots-vertical-rounded bxf-bx-dots-vertical-rounded"></i>
+                                </li>
+
+                            </ul>
+
+                            <ul class="bell_down-content">
+                                <li class="bell_down-item">
+                                  <img src="./assets/img/Nguoi_noi_tieng.jpg" alt="Chanel avatar" class="bell_down-img-first">
+                                </li>
+
+                                <li class="bell_down-item f-m-bell_content">
+                                   <p class="bell_down-description">Bhutan - Quốc Gia "Hạnh Phúc Nhất Thế Gới"</p>
+                                   <span class="bell_down-sub-description"> 1 giờ trước</span>
+                                </li>
+
+                                <li class="bell_down-item">
+                                   <img src="./assets/img/Bhutan.jpg" alt="Avatar Description Channel" class="bell_down-img-second">
+                                </li>
+
+                                <li class="bell_down-item">
+                                   <i class="bx bx-dots-vertical-rounded bxf-bx-dots-vertical-rounded"></i>
+                                </li>
+
+                            </ul>
+
+                            <ul class="bell_down-content">
+                                <li class="bell_down-item">
+                                  <img src="./assets/img/f8-myfavourite.jpg" alt="Chanel avatar" class="bell_down-img-first">
+                                </li>
+
+                                <li class="bell_down-item f-m-bell_content">
+                                   <p class="bell_down-description">Lần trở lại này F8 sẽ làm gì cho các bạn? Học Lập trình để đi làm tại F8 nào</p>
+                                   <span class="bell_down-sub-description"> 1 giờ trước</span>
+                                </li>
+
+                                <li class="bell_down-item">
+                                   <img src="./assets/img/A_Son-f8.png" alt="Avatar Description Channel" class="bell_down-img-second">
+                                </li>
+
+                                <li class="bell_down-item">
+                                   <i class="bx bx-dots-vertical-rounded bxf-bx-dots-vertical-rounded"></i>
+                                </li>
+
+                            </ul>
+
+                            <ul class="bell_down-content">
+                                <li class="bell_down-item">
+                                  <img src="./assets/img/f8-myfavourite.jpg" alt="Chanel avatar" class="bell_down-img-first">
+                                </li>
+
+                                <li class="bell_down-item f-m-bell_content">
+                                   <p class="bell_down-description">Lần trở lại này F8 sẽ làm gì cho các bạn? Học Lập trình để đi làm tại F8 nào</p>
+                                   <span class="bell_down-sub-description"> 1 giờ trước</span>
+                                </li>
+
+                                <li class="bell_down-item">
+                                   <img src="./assets/img/A_Son-f8.png" alt="Avatar Description Channel" class="bell_down-img-second">
+                                </li>
+
+                                <li class="bell_down-item">
+                                   <i class="bx bx-dots-vertical-rounded bxf-bx-dots-vertical-rounded"></i>
+                                </li>
+
+                            </ul>
+
+                            <ul class="bell_down-content">
+                                <li class="bell_down-item">
+                                  <img src="./assets/img/f8-myfavourite.jpg" alt="Chanel avatar" class="bell_down-img-first">
+                                </li>
+
+                                <li class="bell_down-item f-m-bell_content">
+                                   <p class="bell_down-description">Lần trở lại này F8 sẽ làm gì cho các bạn? Học Lập trình để đi làm tại F8 nào</p>
+                                   <span class="bell_down-sub-description"> 1 giờ trước</span>
+                                </li>
+
+                                <li class="bell_down-item">
+                                   <img src="./assets/img/A_Son-f8.png" alt="Avatar Description Channel" class="bell_down-img-second">
+                                </li>
+
+                                <li class="bell_down-item">
+                                   <i class="bx bx-dots-vertical-rounded bxf-bx-dots-vertical-rounded"></i>
+                                </li>
+
+                            </ul>
+
+                            <ul class="bell_down-content">
+                                <li class="bell_down-item">
+                                  <img src="./assets/img/f8-myfavourite.jpg" alt="Chanel avatar" class="bell_down-img-first">
+                                </li>
+
+                                <li class="bell_down-item f-m-bell_content">
+                                   <p class="bell_down-description">Lần trở lại này F8 sẽ làm gì cho các bạn? Học Lập trình để đi làm tại F8 nào</p>
+                                   <span class="bell_down-sub-description"> 1 giờ trước</span>
+                                </li>
+
+                                <li class="bell_down-item">
+                                   <img src="./assets/img/A_Son-f8.png" alt="Avatar Description Channel" class="bell_down-img-second">
+                                </li>
+
+                                <li class="bell_down-item">
+                                   <i class="bx bx-dots-vertical-rounded bxf-bx-dots-vertical-rounded"></i>
+                                </li>
+
+                            </ul>
+
+                            <ul class="bell_down-content">
+                                <li class="bell_down-item">
+                                  <img src="./assets/img/f8-myfavourite.jpg" alt="Chanel avatar" class="bell_down-img-first">
+                                </li>
+
+                                <li class="bell_down-item f-m-bell_content">
+                                   <p class="bell_down-description">Lần trở lại này F8 sẽ làm gì cho các bạn? Học Lập trình để đi làm tại F8 nào</p>
+                                   <span class="bell_down-sub-description"> 1 giờ trước</span>
+                                </li>
+
+                                <li class="bell_down-item">
+                                   <img src="./assets/img/A_Son-f8.png" alt="Avatar Description Channel" class="bell_down-img-second">
+                                </li>
+
+                                <li class="bell_down-item">
+                                   <i class="bx bx-dots-vertical-rounded bxf-bx-dots-vertical-rounded"></i>
+                                </li>
+
+                            </ul>
+
+                            <ul class="bell_down-content">
+                                <li class="bell_down-item">
+                                  <img src="./assets/img/f8-myfavourite.jpg" alt="Chanel avatar" class="bell_down-img-first">
+                                </li>
+
+                                <li class="bell_down-item f-m-bell_content">
+                                   <p class="bell_down-description">Lần trở lại này F8 sẽ làm gì cho các bạn? Học Lập trình để đi làm tại F8 nào</p>
+                                   <span class="bell_down-sub-description"> 1 giờ trước</span>
+                                </li>
+
+                                <li class="bell_down-item">
+                                   <img src="./assets/img/A_Son-f8.png" alt="Avatar Description Channel" class="bell_down-img-second">
+                                </li>
+
+                                <li class="bell_down-item">
+                                   <i class="bx bx-dots-vertical-rounded bxf-bx-dots-vertical-rounded"></i>
+                                </li>
+
+                            </ul>
+
+                            <ul class="bell_down-content">
+                                <li class="bell_down-item">
+                                  <img src="./assets/img/f8-myfavourite.jpg" alt="Chanel avatar" class="bell_down-img-first">
+                                </li>
+
+                                <li class="bell_down-item f-m-bell_content">
+                                   <p class="bell_down-description">Lần trở lại này F8 sẽ làm gì cho các bạn? Học Lập trình để đi làm tại F8 nào</p>
+                                   <span class="bell_down-sub-description"> 1 giờ trước</span>
+                                </li>
+
+                                <li class="bell_down-item">
+                                   <img src="./assets/img/A_Son-f8.png" alt="Avatar Description Channel" class="bell_down-img-second">
+                                </li>
+
+                                <li class="bell_down-item">
+                                   <i class="bx bx-dots-vertical-rounded bxf-bx-dots-vertical-rounded"></i>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+               
+                <li class="list_right-item">
+                    <img src="./assets/img/AE_LONG.jpg" alt="User-login" class="user-avatar">
+                    <div class="user_down">
+                        <ul class="user_down-header">
+                            <li class="user_down-item-header">
+                               <img src="./assets/img/AE_LONG.jpg" alt="Channel Avatar" class="user_down-img">
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+
+
+</body>
+</html>
