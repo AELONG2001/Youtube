@@ -199,7 +199,7 @@
   color: var(--text-color);
   font-size: 1.5rem;
   max-width: 130px;
-  margin: 0 0 0 -5px;
+  margin: 0 0 0 1px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
@@ -270,7 +270,7 @@
 
 .header_logo {
   width: 120px;
-  transform: translateX(11px)
+  transform: translateX(17px)
 }
 
 .header_logo-fix-navbar {
@@ -587,19 +587,24 @@
   padding: 0 4px;
 }
 
+.icon-special {
+  color: var(--main-color);
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+  transform: translateX(8px);
+}
+
+
 .videos_item:hover {
   background-color: var(--hover-color);
 }
 
-.btf-station {
-  color: var(--main-color) !important;
-  padding: 14px !important;
-}
 
 .videos_description {
   font-family: 'roboto', sans-serif;
   font-size: 1.4rem;
-  margin: 0;
+  margin: 0 0 0 24px;
 }
 
 

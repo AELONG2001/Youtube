@@ -14,7 +14,7 @@
 /* navbar small */
 .slider-small {
   position: fixed;
-  transform: translateX(-8px);
+  transform: translateX(-4px);
   margin-top: 8px;
   margin-top: calc((var(--header-height)) + (8px));
   z-index: 99;
@@ -55,6 +55,7 @@
 .bxs-ctn-home {
     color: var(--color-active);
     font-size: 2.4rem;
+    margin-right: 7px;
 }
 
 .bxs-ctn-compass,
@@ -63,6 +64,7 @@
     color: var(--main-color);
     font-size: 2.4rem;
     padding: 0;
+    margin-right: 7px;
 }
 
 .slider_container-description {
@@ -76,19 +78,19 @@
 }
 
 .slider-text-1 {
-  transform: translateX(14px);
+  transform: translateX(8px);
 }
 
 .slider-text-2 {
-  transform: translateX(12px);
+  transform: translateX(8px);
 }
 
 .slider-text-3 {
-  transform: translateX(5px);
+  transform: translateX(-1px);
 }
 
 .slider-text-4 {
-  transform: translateX(15px);
+  transform: translateX(12px);
 }
 
 
@@ -100,14 +102,14 @@
 }
 
 .container-videos-X {
-  transform: translateX(-7px);
+  transform: translateX(-2px);
 }
 
 
 /* Thanh trượt trên container */
 .slider_container_scroll {
   position: fixed;
-  margin: var(--header-height) 0 0 calc((var(--width-slider-bar)) + (10px));
+  margin: var(--header-height) 0 0 calc((var(--width-slider-bar)) + (11px));
   padding-top: 5px;
   background-color: var(--white-color);
   border-top: 1px solid var(--border-light-color);
@@ -117,7 +119,7 @@
 }
 
 .scroll-when-click {
-  transform: translateX(-184px);
+  transform: translateX(-178px);
 }
 
 .container_scroll-list {
@@ -129,7 +131,8 @@
 }
 
 .container_scroll-list-fix-navbar {
-  margin-left: 22px;
+  margin-left: 13px;
+  transform: translateY(-2px);
 }
 
 .container_scroll-item {
@@ -205,7 +208,7 @@
 /* List product videos */
 .product_videos-total { 
   width: 1232px;
-  margin: calc((var(--header-height)) + (70px)) 0 0 32px;
+  margin: calc((var(--header-height)) + (75px)) 0 0 24px;
 }
 
 .product_videos-total-X {
@@ -424,7 +427,7 @@
 .product_video_user-chanel {
   display: flex;
   align-items: center;
-  margin: 4px 0 -4px 0;
+  margin: 8px 0 -4px 0;
 }
 
 .product_video_user-name {
