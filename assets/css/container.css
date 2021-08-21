@@ -1,0 +1,483 @@
+
+.col-1 {
+    width: 5%;
+}
+
+.col-11 {
+    width: 95%;
+}
+
+.container-main {
+  position: relative;
+}
+
+/* navbar small */
+.slider-small {
+  position: fixed;
+  transform: translateX(-8px);
+  margin-top: 8px;
+  margin-top: calc((var(--header-height)) + (8px));
+  z-index: 99;
+  display: none;
+}
+
+.show-small.slider-small {
+  display: block;
+}
+
+.slider_container-list {
+   list-style: none;
+   padding-left: 0;
+   margin: 0;
+}
+
+.slider_container-item {
+    padding-bottom: 24px;
+}
+
+.slider_container-item:hover {
+    background-color: var(--hover-color);
+}
+
+.product_video {
+  overflow: hidden;
+}
+
+.slider_container-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(25%);
+  text-decoration: none;
+}
+
+.bxs-ctn-home {
+    color: var(--color-active);
+    font-size: 2.4rem;
+}
+
+.bxs-ctn-compass,
+.bxl-ctn-youtube,
+.bxs-ctn-videos {
+    color: var(--main-color);
+    font-size: 2.4rem;
+    padding: 0;
+}
+
+.slider_container-description {
+   color: var(--color-active);
+   font-size: 1rem;
+   min-width: 68px;
+}
+
+.slider-fix-desc {
+  color: var(--main-color);
+}
+
+.slider-text-1 {
+  transform: translateX(14px);
+}
+
+.slider-text-2 {
+  transform: translateX(12px);
+}
+
+.slider-text-3 {
+  transform: translateX(5px);
+}
+
+.slider-text-4 {
+  transform: translateX(15px);
+}
+
+
+/* Container transform when click navbar */
+.container-videos {
+  transform: translateX(177px);
+  overflow: hidden;
+  background-color: #f8f8f8;
+}
+
+.container-videos-X {
+  transform: translateX(-7px);
+}
+
+
+/* Thanh trượt trên container */
+.slider_container_scroll {
+  position: fixed;
+  margin: var(--header-height) 0 0 calc((var(--width-slider-bar)) + (10px));
+  padding-top: 5px;
+  background-color: var(--white-color);
+  border-top: 1px solid var(--border-light-color);
+  border-bottom: 1px solid var(--border-light-color);
+  overflow: hidden;
+  z-index: 20;
+}
+
+.scroll-when-click {
+  transform: translateX(-184px);
+}
+
+.container_scroll-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 8px 0;
+  margin: 0 0 0 9px;
+}
+
+.container_scroll-list-fix-navbar {
+  margin-left: 22px;
+}
+
+.container_scroll-item {
+  padding-left: 12px;
+  flex-shrink: 0;
+}
+
+
+.container_scroll-link {
+  display: block;
+  font-family: 'roboto', sans-serif;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding: 7px 12px;
+  color: var(--black-color);
+  background-color: #f2f2f2;
+  border-radius: 16px;
+  text-decoration: none;
+}
+
+.container_scroll-link:hover {
+  color: var(--black-color);
+  background-color: var(--background-active);
+}
+
+.container_scroll-link-active {
+  color: var(--white-color);
+  background-color: #030303;
+}
+
+
+.container_scroll-link-active:hover {
+  color: var(--white-color);
+  background-color: #a8a1a1;
+}
+
+
+/* Button arrow scroll */
+.prev-btn {
+  z-index: 12;
+  position: absolute;
+  height: 32px;
+  border: none;
+  outline: none;
+  transform: translateY(-42px);
+  background-color: var(--white-color);
+  box-shadow: -4px 10px 15px 22px var(--white-color);
+}
+
+
+.next-btn {
+  z-index: 12;
+  position: absolute;
+  height: 32px;
+  border: none;
+  outline: none;
+  transform: translate(4446%, -42px);
+  background-color: var(--white-color);
+  box-shadow: 16px 10px 10px 30px var(--white-color);
+}
+
+.next-transform-btn {
+  transform: translate(3788%, -42px);
+}
+
+.button-chevron-left,
+.button-chevron-right {
+  font-size: 1.6rem;
+  color: var(--main-color);
+}
+
+
+/* List product videos */
+.product_videos-total { 
+  width: 1232px;
+  margin: calc((var(--header-height)) + (70px)) 0 0 32px;
+}
+
+.product_videos-total-X {
+  width: 1200px;
+  margin-left: 19px;
+}
+
+.product_video-X {
+  width: 269px;
+}
+
+.product_video-img-main-X {
+  width: 252px !important;
+  height: 148px !important;
+}
+
+.col-video-mb {
+  margin-bottom: 24px;
+}
+
+.product_video:hover .product_video-option {
+  opacity: 1;
+}
+
+.product_video-link {
+  text-decoration: none;
+}
+
+.product_video-img {
+  position: relative;
+}
+
+.product_video-img-main{
+  width: 295px;
+  height: 165px;
+}
+
+.product_video-img-time {
+  position: absolute;
+  font-family: 'roboto', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  right: 5px;
+  bottom: 5px;
+  padding: 2px 4px;
+  color: var(--white-color);
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 2px;
+}
+
+
+/* When hover on product-video show icon */
+.videos-icon-play {
+  position: absolute;
+  top: 25%;
+  right: 40%;
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.9);
+  display: none;
+}
+
+.product_video:hover .videos-icon-play {
+  display: block;
+}
+
+.videos_list-icon-hover {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+  display: none;
+}
+
+.product_video:hover .videos_list-icon-hover {
+  display: block;
+}
+
+.videos_item-icon-hover {
+  background-color: var(--black-color);
+  border-radius: 2px;
+}
+
+.videos_item-icon-hover + .videos_item-icon-hover {
+  margin-top: 6px;
+}
+
+.bxf-time {
+  font-size: 2.2rem;
+  color: #fff;
+  padding: 2px;
+}
+.bxf-list-ul {
+  font-size: 2.2rem;
+  color: #fff;
+  padding: 2px;
+}
+
+.list-icon-skiing-time {
+  display: none;
+  position: absolute;
+  width: 72px;
+  height: 27px;
+  top: 0px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.96);
+  border-radius: 2px;
+  animation: changeWidthTime 0.3s ease-in;
+  z-index: -1;
+  overflow: hidden;
+}
+
+/* Animation thay đổi width khi hover vào icon time*/
+@keyframes changeWidthTime {
+  from {
+    width: 0;
+  }to {
+    width: 80px;
+  }
+}
+
+.videos_item-icon-hover-time:hover .list-icon-skiing-time {
+  display: flex;
+}
+
+.list-icon-skiing-ul {
+  display: none;
+  position: absolute;
+  width: 190px;
+  height: 27px;
+  top: 33px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.96);
+  border-radius: 2px;
+  animation: changeWidthListUl 0.3s ease-in;
+  z-index: -1;
+  overflow: hidden;
+}
+
+/* Animation thay đổi width khi hover vào icon time*/
+@keyframes changeWidthListUl {
+  from {
+    width: 1px;
+  }to {
+    width: 190px;
+  }
+}
+
+.videos_item-icon-hover-list-ul:hover .list-icon-skiing-ul {
+  display: flex;
+}
+
+.list-icon-skiing-time span {
+  flex-shrink: 0;
+  font-family: 'roboto', sans-serif;
+  display: block;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  padding: 3px;
+  text-transform: uppercase;
+  margin: 2px 0 0 4px;
+} 
+
+.list-icon-skiing-ul span {
+  flex-shrink: 0;
+  font-family: 'roboto', sans-serif;
+  display: block;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  opacity: 0;
+  padding: 3px;
+  text-transform: uppercase;
+  margin: 2px 0 0 6px;
+  z-index: -1;
+  transition: alls 0.01s ease-out;
+} 
+
+.videos_item-icon-hover-list-ul:hover .list-icon-skiing-ul span {
+  opacity: 1;
+}
+
+.product_video_content {
+  display: flex;
+}
+
+.product_video-img-user img {
+  width: 36px;
+  height: 36px;
+  margin: 10px 0;
+  align-self: flex;
+}
+
+.product_video-description {
+  position: relative;
+  padding: 10px;
+}
+
+.product_video-title {
+  font-family: 'roboto', sans-serif;
+  color: var(--black-color);
+  font-size: 1.6rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin: 0;
+  padding-right: 16px;
+}
+
+.product_video_user-chanel {
+  display: flex;
+  align-items: center;
+  margin: 4px 0 -4px 0;
+}
+
+.product_video_user-name {
+  font-family: 'roboto', sans-serif;
+  font-size: 1.4rem;
+  color: var(--text-info);
+}
+.product_video_user-verified {
+  font-size: 1.3rem;
+  color: var(--text-info);
+  padding: 0 0 0 4px;
+}
+
+.product_video-info {
+  display: flex;
+  align-items: center;
+}
+
+.product_video-info-view,
+.product_video-info-dot,
+.product_video-info-date {
+  font-size: 1.3rem;
+  font-family: 'roboto', sans-serif;
+  color: var(--text-info);
+}
+
+.product_video-info-dot {
+  font-size: 0.35rem;
+  padding: 1px 6px 0 6px;
+}
+
+.product_video-option {
+ position: absolute;
+ top: 8px;
+ right: -2px;
+ opacity: 0;
+}
+
+.bxf-dots-vertical-rounded-video {
+  font-size: 2.4rem;
+  color: #909090;
+}
+
+
+/* Bắc cầu để fix lỗi thừa khoảng trắng ở container */
+.bridge-container-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 15px;
+  height: 206.4%;
+  background-color: #f8f8f8;
+}
+
+
