@@ -7,6 +7,7 @@
   top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
   width: 100%;
   height: var(--header-height);
   background-color: var(--white-color);
@@ -380,7 +381,7 @@
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 10;
+  z-index: 9999;
 }
 
 .modal_mic-content {
@@ -391,7 +392,7 @@
   left: 28%;
   background-color: var(--bs-white);
   border-radius: 2px;
-  z-index: 99;
+  z-index: 99999;
 }
 
 .btn-x {

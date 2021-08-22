@@ -17,7 +17,6 @@
   transform: translateX(-4px);
   margin-top: 8px;
   margin-top: calc((var(--header-height)) + (8px));
-  z-index: 99;
   display: none;
 }
 
