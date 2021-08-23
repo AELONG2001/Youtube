@@ -276,6 +276,148 @@ clickHtt.addEventListener('click', () => {
 });
 
 
+//input comment
+const inputComment = $('.video-input');
+const btnComment = $('.video_comment-user-btn');
+const cancelComment = $('.video_comment-btn-cancel');
+const cmtComment = $('.video_comment-btn-cmt');
+
+inputComment.addEventListener('input', () => {
+    btnComment.style.display = 'block';
+    btnComment.classList.add('focus-active');
+    cmtComment.classList.add('active');
+});
+
+cancelComment.addEventListener('click', () => {
+    btnComment.style.display = 'none';
+});
 
 
-       
+
+// List arrow down comment
+const clickArrowComment = $('.video_comment-user-response-arrow-down');
+const listShowSubComment = $('.video_comment-list-down-main');
+const arrowDownSubComment = $('.bxf-down-arrow');
+const listShowHide = $('.clickShowHide');
+const listDownMb = $('.video_comment-list-down');
+const listDownChange = listDownMb.closest('.video_comment-user-response');
+
+clickArrowComment.addEventListener('click', () => {
+    listShowSubComment.classList.toggle('list-comment-show');
+    arrowDownSubComment.classList.toggle('bxf-down-arrow-change');
+    
+    const checkArrowList = $('.bxf-down-arrow-change');
+    if(checkArrowList) {
+        listShowHide.innerText = 'Ẩn 4 phản hồi';
+    }else {
+        listShowHide.innerText = 'Xem 4 câu trả lời';
+    }
+
+    // fix list down margin-bottom
+    if(checkArrowList) {
+        listDownChange.style.marginBottom = '420px';
+    }else {
+        listDownChange.style.marginBottom = '0';
+    }
+});
+
+
+// video like active
+const likeBtn = $('.like-click-change');
+const amountLike = $('.amount_like-click-change')
+const lineBtn = $('.line-click-change');
+const likeUpDown = $('.like-up-down');
+const dislikeUpDown = $('.dislike-up-down');
+const dislikeBtn = $('.dislike-click-change');
+const amountDislike = $('.amount-dislike-click-change');
+const dislikeMain = $('.dislike-click-main');
+
+
+
+likeBtn.addEventListener('click', () => {
+    likeBtn.classList.toggle('like-active');
+    amountLike.classList.toggle('like-active');
+    lineBtn.classList.toggle('like-active');
+    dislikeBtn.classList.remove('dislike-active');
+    amountDislike.classList.remove('dislike-active'); 
+
+    const likeAdd = $('.like-active');
+    if(likeAdd) {
+        amountLike.innerText = '543';
+    }else {
+        amountLike.innerText = '542';
+    }
+
+    if(likeAdd) {
+        amountDislike.innerText = '0';
+    }else {
+        amountDislike.innerText = '1';
+    }
+});
+
+amountLike.addEventListener('click', () => {
+    likeBtn.classList.toggle('like-active');
+    amountLike.classList.toggle('like-active');
+    lineBtn.classList.toggle('like-active');
+    dislikeBtn.classList.remove('dislike-active');
+    amountDislike.classList.remove('dislike-active');
+
+    const likeAdd = $('.like-active');
+    if(likeAdd) {
+        amountLike.innerText = '543';
+    }else {
+        amountLike.innerText = '542';
+    }
+
+    if(likeAdd) {
+        amountDislike.innerText = '0';
+    }else {
+        amountDislike.innerText = '1';
+    }
+});
+
+
+likeBtn.addEventListener('mousedown', () => {
+    likeUpDown.classList.toggle('btn-up-social-like');
+});
+
+
+
+dislikeMain.addEventListener('click', () => {
+    dislikeBtn.classList.toggle('dislike-active');
+    amountDislike.classList.toggle('dislike-active');
+    likeBtn.classList.remove('like-active');
+    amountLike.classList.remove('like-active');
+    lineBtn.classList.remove('like-active');
+
+    const dislikeAdd = $('.dislike-active');
+    if(dislikeAdd) {
+        amountDislike.innerText = '1';
+    }else {
+        amountDislike.innerText = '0';
+    }
+
+    if(dislikeAdd) {
+        amountLike.innerText = '542';
+    }else {
+        amountLike.innerText = '543';
+    }
+});
+
+amountDislike.addEventListener('click', () => {
+    dislikeMain.classList.toggle('dislike-active');
+    amountDislike.classList.toggle('dislike-active');
+    likeBtn.classList.remove('like-active');
+    amountLike.classList.remove('like-active');
+    lineBtn.classList.remove('like-active');
+
+});
+
+
+dislikeMain.addEventListener('mousedown', () => {
+    dislikeUpDown.classList.toggle('btn-up-social-dislike');
+});
+
+
+
+// video share active
