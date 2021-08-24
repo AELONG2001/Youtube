@@ -315,7 +315,7 @@ clickArrowComment.addEventListener('click', () => {
 
     // fix list down margin-bottom
     if(checkArrowList) {
-        listDownChange.style.marginBottom = '420px';
+        listDownChange.style.marginBottom = '440px';
     }else {
         listDownChange.style.marginBottom = '0';
     }
@@ -559,5 +559,187 @@ dislikeCommentBtn.forEach((commentIconDislike) => {
       
        
     });
+});
+
+
+
+// response comment active
+const boxResponseOne = $('.box-response-one');
+const boxResponseTwo = $('.box-response-two');
+const boxResponseThree = $('.box-response-three');
+const boxResponseFour = $('.box-response-four');
+const boxResponseFive = $('.box-response-five');
+const inputResponseOne = $('.box-response-input-main-one');
+const inputResponseTwo = $('.box-response-input-main-two');
+const inputResponseThree = $('.box-response-input-main-three');
+const inputResponseFour = $('.box-response-input-main-four');
+const inputResponseFive = $('.box-response-input-main-five');
+const activeChangeColorBtnOne = $('.box-response-btn-cmt-one');
+const activeChangeColorBtnTwo = $('.box-response-btn-cmt-two');
+const activeChangeColorBtnThree = $('.box-response-btn-cmt-three');
+const activeChangeColorBtnFour = $('.box-response-btn-cmt-four');
+const activeChangeColorBtnFive = $('.box-response-btn-cmt-five');
+const closeBoxResponseOne = $('.box-response-btn-cancel-one');
+const closeBoxResponseTwo = $('.box-response-btn-cancel-two');
+const closeBoxResponseThree = $('.box-response-btn-cancel-three');
+const closeBoxResponseFour = $('.box-response-btn-cancel-four');
+const closeBoxResponseFive = $('.box-response-btn-cancel-five');
+const feedbackResponseOne = $('.feedback-one');
+const feedbackResponseTwo = $('.feedback-two');
+const feedbackResponseThree = $('.feedback-three');
+const feedbackResponseFour = $('.feedback-four');
+const feedbackResponseFive = $('.feedback-five');
+const subCommentBtn = $('.video_comment-list-down');
+const arrowDownList = $('.video_comment-user-response-arrow-down');
+const videoContainerLeft = $('.video_container-left');
+const findBoxResponse =  boxResponseOne.closest('.video_comment-user-response');
+
+feedbackResponseOne.addEventListener('click', () => {
+
+    boxResponseOne.classList.toggle('box-response-change');
+    boxResponseOne.style.marginTop = '8px';
+    arrowDownList.classList.toggle('active');
+    listDownMb.style.display = 'none';
+
+    const boxResponseChange = $('.box-response-change');
+
+    if(boxResponseChange) {
+        listDownChange.style.marginBottom = '100px';
+    }else {
+        listDownChange.style.marginBottom = '0px';
+    }
+
+    const boxResponseArrowChange = $('.bxf-down-arrow-change');
+    
+    if(boxResponseArrowChange) {
+        listCommentThird.style.marginTop = '10px';
+    }else {
+        listCommentThird.style.marginTop = '0px';
+    }
+
+});
+
+const listCommentThird = $('.video_comment-user-response-third');
+
+
+feedbackResponseTwo.addEventListener('click', () => {
+
+    boxResponseTwo.classList.toggle('box-response-change');
+    boxResponseTwo.style.marginTop = '8px';
+
+    const boxResponseChange = $('.box-response-change');
+
+    if(boxResponseChange) {
+        listCommentThird.style.marginTop = '80px';
+    }else {
+        listCommentThird.style.marginTop = '14px';
+    }
+
+});
+
+const listCommentFourth = $('.video_comment-user-response-fourth');
+
+
+feedbackResponseThree.addEventListener('click', () => {
+
+    boxResponseThree.classList.toggle('box-response-change');
+    boxResponseThree.style.marginTop = '8px';
+
+    videoContainerLeft.style.height = '1900px';
+
+    const boxResponseChange = $('.box-response-change');
+
+    if(boxResponseChange) {
+        listCommentFourth.style.marginTop = '80px';
+    }else {
+        listCommentFourth.style.marginTop = '14px';
+    }
+
+});
+
+
+const listCommentFifth = $('.video_comment-user-response-fifth');
+
+
+feedbackResponseFour.addEventListener('click', () => {
+
+    boxResponseFour.classList.toggle('box-response-change');
+    boxResponseFour.style.marginTop = '8px';
+
+    const boxResponseChange = $('.box-response-change');
+
+    if(boxResponseChange) {
+        listCommentFifth.style.marginTop = '80px';
+    }else {
+        listCommentFifth.style.marginTop = '14px';
+    }
+
+});
+
+feedbackResponseFive.addEventListener('click', () => {
+
+    boxResponseFive.classList.toggle('box-response-change');
+    boxResponseFive.style.marginTop = '8px';
+
+});
+
+
+inputResponseOne.addEventListener('input', () => {
+    activeChangeColorBtnOne.classList.add('active');
+});
+
+inputResponseTwo.addEventListener('input', () => {
+    activeChangeColorBtnTwo.classList.add('active');
+});
+
+
+
+inputResponseThree.addEventListener('input', () => {
+    activeChangeColorBtnThree.classList.add('active');
+});
+
+
+inputResponseFour.addEventListener('input', () => {
+    activeChangeColorBtnFour.classList.add('active');
+});
+
+
+inputResponseFive.addEventListener('input', () => {
+    activeChangeColorBtnFive.classList.add('active');
+});
+
+closeBoxResponseOne.addEventListener('click', () => {
+    boxResponseOne.style.display = 'none';
+    arrowDownList.style.marginTop = '0px';
+
+    const boxResponseChange = $('.box-response-change');
+
+    if(boxResponseChange) {
+        listDownChange.style.marginBottom = '0px';
+    }else {
+        listDownChange.style.marginBottom = '0px';
+    }
+});
+
+
+closeBoxResponseTwo.addEventListener('click', () => {
+    boxResponseTwo.style.display = 'none';
+    listCommentThird.style.marginTop = '14px';   
+});
+
+closeBoxResponseThree.addEventListener('click', () => {
+    boxResponseThree.style.display = 'none';
+    listCommentFourth.style.marginTop = '14px';   
+});
+
+
+closeBoxResponseFour.addEventListener('click', () => {
+    boxResponseFour.style.display = 'none';
+    listCommentFifth.style.marginTop = '14px';   
+});
+
+
+closeBoxResponseFive.addEventListener('click', () => {
+    boxResponseFive.style.display = 'none';
 });
 

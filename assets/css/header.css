@@ -229,6 +229,7 @@
   color: var(--main-color);
   padding: 0 10px 0 24px;
   z-index: 1;
+  cursor: pointer;
 }
 
 
@@ -333,6 +334,7 @@
 .header_microphone {
   position: relative;
   transform: translateX(12px);
+  cursor: pointer;
 }
 
 /* Hiệu ứng nhấp nháy chuôt */
@@ -557,6 +559,10 @@
   animation: menuChange 0.3s ease-out;
 }
 
+.header_list-right .list_right-item {
+  cursor: pointer;
+}
+
 
 .header_list-right .list_right-item i {
   color: var(--main-color);
@@ -586,6 +592,7 @@
   align-items: center;
   height: 40px;
   padding: 0 4px;
+  cursor: pointer;
 }
 
 .icon-special {
@@ -772,6 +779,7 @@
   height: 32px;
   margin: 0 10px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .border_user-avatar {
@@ -877,6 +885,7 @@
   display: flex;
   align-items: center;
   height: 40px;
+  cursor: pointer;
 }
 
 .user_down-content-item-third {
