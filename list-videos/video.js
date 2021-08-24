@@ -223,7 +223,7 @@ listUserDown.addEventListener('click', (e) => {
 const navBarVideoCLick = $('.click-show-menu');
 const navBarRemove = $('.click-hide-menu');
 const sliderVideo = $('.slider_bar-video');
-const overlayNavBar = $('.overlay-navbar');
+const overlayNavBar = $('.overlay');
 const barChange = $('.btn-click');
 const barChangeSpecial = $('.btn-click-special');
 
@@ -241,17 +241,17 @@ navBarVideoCLick.onmousedown = () => {
 
 navBarVideoCLick.addEventListener('click', () => {
     sliderVideo.classList.add('slider_bar-video-click');
-    overlayNavBar.classList.add('overlay-navbar-change');
+    overlayNavBar.classList.add('overlay-change');
 });
 
 navBarRemove.addEventListener('click', () => {
     sliderVideo.classList.remove('slider_bar-video-click');
-    overlayNavBar.classList.remove('overlay-navbar-change');
+    overlayNavBar.classList.remove('overlay-change');
 });
 
 overlayNavBar.addEventListener('click', () => {
     sliderVideo.classList.remove('slider_bar-video-click');
-    overlayNavBar.classList.remove('overlay-navbar-change');
+    overlayNavBar.classList.remove('overlay-change');
     barChange.classList.remove('btn-down');
 });
 
@@ -421,3 +421,143 @@ dislikeMain.addEventListener('mousedown', () => {
 
 
 // video share active
+const shareBtn = $('.video_info-share');
+const shareOverlay = $('.overlay');
+const videoBoxShare = $('.video_box-share');
+const closeBoxShare =$('.bxf-x');
+
+shareBtn.addEventListener('click', () => {
+    shareOverlay.classList.toggle('overlay-change');
+    videoBoxShare.classList.toggle('video_box-share-change');
+});
+
+
+shareOverlay.addEventListener('click', () => {
+    videoBoxShare.classList.remove('video_box-share-change');
+});
+
+
+closeBoxShare.addEventListener('click', () => {
+    videoBoxShare.classList.remove('video_box-share-change');
+    shareOverlay.classList.remove('overlay-change');
+});
+
+
+
+// video save active
+const saveBtn = $('.video_info-save');
+const videoBoxSave = $('.video_box-save');
+const addListDown = $('.bxf-plus');
+const videoBoxList = $('.video_box-new-list');
+const videoBoxListDown = $('.video_box-new-list-down');
+const closeVideoSaveBox = $('.bxf-x-save');
+
+saveBtn.addEventListener('click', () => {
+    shareOverlay.classList.toggle('overlay-change');
+    videoBoxSave.classList.toggle('video_box-save-active');
+});
+
+
+shareOverlay.addEventListener('click', () => {
+    videoBoxSave.classList.remove('video_box-save-active');
+});
+
+
+closeVideoSaveBox.addEventListener('click', () => {
+    videoBoxSave.classList.remove('video_box-save-active');
+    shareOverlay.classList.remove('overlay-change');
+});
+
+addListDown.addEventListener('click', () => {
+    videoBoxListDown.classList.toggle('video_box-new-list-down-change');
+    videoBoxList.style.display = 'none';
+});
+
+
+// video report active
+const threeDotsBtn = $('.bxf-three-dots');
+const listReportActive = $('.video_info-social-list-report');
+
+threeDotsBtn.addEventListener('click', () => {
+    listReportActive.classList.toggle('active');
+});
+
+
+//video subscribe active
+const subscribeBtn = $('.video_btn-subscribe');
+const subscribeBell = $('.bxf-bell');
+const innerContentSubscribe = $('.video_btn-content');
+const listDownSubscribe = $('.video_box-subscribe')
+const closeListDownSubscribe = $('.video_box-subscribe-select-close');
+const un_scribeListDown = $('.video_box-subscribe-select-un-scribe');
+
+subscribeBtn.addEventListener('click', () => {
+    subscribeBtn.classList.toggle('btn-subscribe-active');
+    subscribeBell.classList.toggle('active');
+
+    const activeBell = $('.active');
+
+    if(activeBell) {
+        innerContentSubscribe.innerText = 'Hủy đăng ký';
+        innerContentSubscribe.style.color = '#606060';
+    }else {
+        innerContentSubscribe.innerText = 'Đăng ký';
+        innerContentSubscribe.style.color = '#fff';
+    }
+
+    
+    const unsubscribeBtn = $('.btn-subscribe-active');
+    unsubscribeBtn.addEventListener('click', () => {
+        shareOverlay.classList.toggle('overlay-change');
+        listDownSubscribe.classList.toggle('video_box-subscribe-change');
+    });
+});
+
+closeListDownSubscribe.addEventListener('click', () => {
+    listDownSubscribe.classList.remove('video_box-subscribe-change');
+    subscribeBell.classList.remove('active');
+    shareOverlay.classList.remove('overlay-change');
+});
+
+
+un_scribeListDown.addEventListener('click', () => {
+    subscribeBtn.classList.add('btn-subscribe-active');
+    shareOverlay.classList.remove('overlay-change');
+    listDownSubscribe.classList.remove('video_box-subscribe-change');
+});
+
+shareOverlay.addEventListener('click', () => {
+    listDownSubscribe.classList.remove('video_box-subscribe-change');
+});
+
+
+
+// like comment active
+const likeCommentBtn = $$('.icon_social-comment-active-like');
+const dislikeCommentBtn = $$('.icon_social-comment-active-dislike');
+
+likeCommentBtn.forEach((commentIconLike) => {
+    commentIconLike.addEventListener('click', () => {
+        commentIconLike.classList.toggle('active_like');
+
+        const activeDislike = $$('.active_dislike');
+        activeDislike.forEach((itemDislike) => {
+            itemDislike.classList.remove('active_dislike');
+        });
+       
+    });
+});
+
+dislikeCommentBtn.forEach((commentIconDislike) => {
+    commentIconDislike.addEventListener('click', () => {
+        commentIconDislike.classList.toggle('active_dislike');
+        
+        const activeLike = $$('.active_like');
+        activeLike.forEach((itemLike) => {
+            itemLike.classList.remove('active_like');
+        });
+      
+       
+    });
+});
+

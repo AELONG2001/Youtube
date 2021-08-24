@@ -231,7 +231,7 @@
                 </div>
            </div>
 
-        <div class="overlay-navbar">
+        <div class="overlay">
                    
         </div>
            
@@ -652,7 +652,8 @@
     </ul>
     
         </div>
-        
+
+     
         <div class="container-video">
             <div class="container">
                 <div class="row video-product">
@@ -697,25 +698,36 @@
                                             <span class="dislike-up-down"></span>
                                         </li>
 
-                                        <li class="video_info-social-item">
+                                        <li class="video_info-social-item video_info-share">
                                             <i class="bx bxs-share video_icon-right"></i>
-                                            <span>Chia sẻ</span>
+                                            <span class="video_info-decs-right">Chia sẻ</span>
                                         </li>
 
-                                        <li class="video_info-social-item">
+                                    
+
+                                        <li class="video_info-social-item video_info-save">
                                             <i class="bx bx-list-plus video_icon-right"></i>
-                                            <span>Lưu</span>
+                                            <span class="video_info-decs-right">Lưu</span>
                                         </li>
 
                                         <li class="video_info-social-item video_icon-right">
-                                            <i class="bx bx-dots-horizontal-rounded"></i>
+                                            <i class="bx bx-dots-horizontal-rounded bxf-three-dots"></i>
+                                            <ul class="video_info-social-list-report">
+                                                <li class="video_info-social-item-report">
+                                                    <i class="bx bxs-flag-alt bxf-flag-alt"></i>
+                                                    <span>Báo vi phạm</span>
+                                                </li>
+
+                                                <li class="video_info-social-item-report">
+                                                    <i class="bx bx-table bxf-table"></i>
+                                                    <span>Mở bản chép lời</span>
+                                                </li>
+                                            </ul>
                                         </li>
                                     </ul>
-                                </div>
-
-                                
+                                </div>                               
                    
-                            </div>
+                            </div>                         
 
                             <div class="video_channel">
                                 <ul class="video_channel-main">
@@ -736,11 +748,14 @@
                                     </li>
                                 </ul>
 
-                               <button class="video_btn-subscribe">
-                                   <a>Đăng ký</a>
+                            <div class="video_channel-register-btn">
+                                <button class="video_btn-subscribe">
+                                    <a class="video_btn-content">Đăng ký</a>
                                 </button>
-                             
+                                    <i class="bx bx-bell bxf-bell"></i>
+                                </div>
                             </div>
+                           
 
                             <div class="video_channel-desc">
                                <div class="video_channel-desc-main">
@@ -867,18 +882,34 @@
 
                                         <ul class="video_comment-user-response-social">
                                             <li class="video_comment-user-response-social-item">
-                                                <i class="bx bxs-like bxr-like"></i>
+                                                <i class="bx bxs-like bxr-like icon_social-comment-active-like"></i>
                                                 <span class="like-click-add">2,1 N</span>
                                             </li>
 
                                             <li class="video_comment-user-response-social-item">
-                                                <i class="bx bxs-dislike bxr-dislike"></i>
+                                                <i class="bx bxs-dislike bxr-dislike icon_social-comment-active-dislike"></i>
                                                 <span></span>
                                             </li>
 
-                                            <li class="video_comment-user-response-social-item">
+                                            <li class="video_comment-user-response-social-item response_comment-active">
                                                 <span class="video_comment-feedback">Phản hồi</span>
                                             </li>
+
+                                                            
+                                            <div class="box-response">
+                                                <div class="box-response-img">
+                                                    <img src="../assets/img/AE_LONG.jpg" alt="Avatar Channel Comment" class="box-response-img-main">
+                                                </div>
+
+                                                <div class="box-response-input">
+                                                </div>
+                                                <input type="text" name="" id="" class="box-response-input-main" placeholder="Bình luận công khai...">
+
+                                                <div class="box-response-btn">
+                                                    <button class="box-response-btn-cancel">Hủy</button>
+                                                    <button class="box-response-btn-cmt">Bình luận</button>
+                                                </div>
+                                            </div>
                                         </ul>
 
                                     
@@ -913,12 +944,12 @@
                     
                                                         <ul class="video_comment-user-response-social">
                                                             <li class="video_comment-user-response-social-item">
-                                                                <i class="bx bxs-like bxr-like"></i>
-                                                                <span>24</span>
+                                                                <i class="bx bxs-like bxr-like icon_social-comment-active-like"></i>
+                                                                <span>1,2 N</span>
                                                             </li>
                     
                                                             <li class="video_comment-user-response-social-item">
-                                                                <i class="bx bxs-dislike bxr-dislike"></i>
+                                                                <i class="bx bxs-dislike bxr-dislike icon_social-comment-active-dislike"></i>
                                                                 <span></span>
                                                             </li>
                     
@@ -952,12 +983,12 @@
                     
                                                         <ul class="video_comment-user-response-social">
                                                             <li class="video_comment-user-response-social-item">
-                                                                <i class="bx bxs-like bxr-like"></i>
-                                                                <span>1004</span>
+                                                                <i class="bx bxs-like bxr-like icon_social-comment-active-like"></i>
+                                                                <span>1 N</span>
                                                             </li>
                     
                                                             <li class="video_comment-user-response-social-item">
-                                                                <i class="bx bxs-dislike bxr-dislike"></i>
+                                                                <i class="bx bxs-dislike bxr-dislike icon_social-comment-active-dislike"></i>
                                                                 <span></span>
                                                             </li>
                     
@@ -991,12 +1022,12 @@
                     
                                                         <ul class="video_comment-user-response-social">
                                                             <li class="video_comment-user-response-social-item">
-                                                                <i class="bx bxs-like bxr-like"></i>
-                                                                <span>546</span>
+                                                                <i class="bx bxs-like bxr-like icon_social-comment-active-like"></i>
+                                                                <span>1,6 N</span>
                                                             </li>
                     
                                                             <li class="video_comment-user-response-social-item">
-                                                                <i class="bx bxs-dislike bxr-dislike"></i>
+                                                                <i class="bx bxs-dislike bxr-dislike icon_social-comment-active-dislike"></i>
                                                                 <span></span>
                                                             </li>
                     
@@ -1030,12 +1061,12 @@
                     
                                                         <ul class="video_comment-user-response-social">
                                                             <li class="video_comment-user-response-social-item">
-                                                                <i class="bx bxs-like bxr-like"></i>
-                                                                <span>10</span>
+                                                                <i class="bx bxs-like bxr-like icon_social-comment-active-like"></i>
+                                                                <span>1,8 N</span>
                                                             </li>
                     
                                                             <li class="video_comment-user-response-social-item">
-                                                                <i class="bx bxs-dislike bxr-dislike"></i>
+                                                                <i class="bx bxs-dislike bxr-dislike icon_social-comment-active-dislike"></i>
                                                                 <span></span>
                                                             </li>
                     
@@ -1052,7 +1083,7 @@
                                 </div>                         
 
                             
-                                <div class="video-sub-list-comments">
+                                <!-- <div class="video-sub-list-comments">
                                     <div class="video_comment-user-response">
                                         <img src="../assets/img/lap_trinh_vien.jpg" alt="Avatar Channel Comment" class="video_comment-user-response-img">
                                         <div class="video_comment-user-response-main">
@@ -1072,12 +1103,12 @@
     
                                             <ul class="video_comment-user-response-social">
                                                 <li class="video_comment-user-response-social-item">
-                                                    <i class="bx bxs-like bxr-like"></i>
+                                                    <i class="bx bxs-like bxr-like icon_social-comment-active-like"></i>
                                                     <span class="like-click-add">1,5 N</span>
                                                 </li>
     
                                                 <li class="video_comment-user-response-social-item">
-                                                    <i class="bx bxs-dislike bxr-dislike"></i>
+                                                    <i class="bx bxs-dislike bxr-dislike icon_social-comment-active-dislike"></i>
                                                     <span class="like-click-subtraction"></span>
                                                 </li>
     
@@ -1111,12 +1142,12 @@
     
                                             <ul class="video_comment-user-response-social">
                                                 <li class="video_comment-user-response-social-item">
-                                                    <i class="bx bxs-like bxr-like"></i>
+                                                    <i class="bx bxs-like bxr-like icon_social-comment-active-like"></i>
                                                     <span class="like-click-add">1,7 N</span>
                                                 </li>
     
                                                 <li class="video_comment-user-response-social-item">
-                                                    <i class="bx bxs-dislike bxr-dislike"></i>
+                                                    <i class="bx bxs-dislike bxr-dislike icon_social-comment-active-dislike"></i>
                                                     <span class="like-click-subtraction"></span>
                                                 </li>
     
@@ -1147,12 +1178,12 @@
     
                                             <ul class="video_comment-user-response-social">
                                                 <li class="video_comment-user-response-social-item">
-                                                    <i class="bx bxs-like bxr-like"></i>
+                                                    <i class="bx bxs-like bxr-like icon_social-comment-active-like"></i>
                                                     <span class="like-click-add">1,2 N</span>
                                                 </li>
     
                                                 <li class="video_comment-user-response-social-item">
-                                                    <i class="bx bxs-dislike bxr-dislike"></i>
+                                                    <i class="bx bxs-dislike bxr-dislike icon_social-comment-active-dislike"></i>
                                                     <span class="like-click-subtraction"></span>
                                                 </li>
     
@@ -1186,12 +1217,12 @@
     
                                             <ul class="video_comment-user-response-social">
                                                 <li class="video_comment-user-response-social-item">
-                                                    <i class="bx bxs-like bxr-like"></i>
+                                                    <i class="bx bxs-like bxr-like icon_social-comment-active-like"></i>
                                                     <span class="like-click-add">1,4 N</span>
                                                 </li>
     
                                                 <li class="video_comment-user-response-social-item">
-                                                    <i class="bx bxs-dislike bxr-dislike"></i>
+                                                    <i class="bx bxs-dislike bxr-dislike icon_social-comment-active-dislike"></i>
                                                     <span class="like-click-subtraction"></span>
                                                 </li>
     
@@ -1203,7 +1234,7 @@
                                         </div>
                                     </div>
                                     
-                                </div>
+                                </div> -->
                            </div>
 
                         </div>
@@ -1217,6 +1248,172 @@
     
         </div>
     </div>
+
+       <!-- box_share khi click vào share -->
+       <div class="video_box-share">
+            <div class="video-box-share-content">
+                <div class="video_box-share-title">
+                    <div class="video_box-share-title-left">
+                        <h3>Chia sẻ</h3>
+                    </div>
+    
+                    <div class="video_box-share-title-right">
+                        <i class="bx bx-x bxf-x"></i>
+                    </div>
+                </div>
+    
+                <div class="video-box-list-social">
+                    
+                    <ul class="video_box-share-social">
+                        <li class="video_box-share-social-item video_box-share-social-item-code">
+                            <i class="bx bx-code bx-share-social">
+                            </i>
+                        </li>
+        
+                        <li class="video_box-share-social-item video_box-share-social-item-facebook">
+                            <i class="bx bxl-facebook bx-share-social">
+                            </i>
+                        </li>
+        
+                        <li class="video_box-share-social-item video_box-share-social-item-whats_app">
+                            <i class="bx bxl-whatsapp bx-share-social">
+                            </i>
+                        </li>
+        
+                        <li class="video_box-share-social-item video_box-share-social-item-twitter">
+                            <i class="bx bxl-twitter bx-share-social">
+                            </i>
+                        </li>
+        
+                        <li class="video_box-share-social-item video_box-share-social-item-email">
+                            <i class="bx bx-mail-send bx-share-social">
+                            </i>
+                        </li>
+        
+                        <li class="video_box-share-social-item video_box-share-social-item-github">
+                            <i class="bx bxl-github bx-share-social">
+                            </i>
+                        </li>
+                    </ul>
+
+
+                    <ul class="video_box-share-social-content">
+                        <p class="video_box-share-social-content-desc">Nhúng</p>
+                        <p class="video_box-share-social-content-desc">Facebook</p>
+                        <p class="video_box-share-social-content-desc">Whatsapp</p>
+                        <p class="video_box-share-social-content-desc">Twitter</p>
+                        <p class="video_box-share-social-content-desc">Email</p>
+                        <p class="video_box-share-social-content-desc">Github</p>
+                    </ul>
+
+                </div>
+    
+                <div class="video-box-share-link">
+                    <p class="video-box-share-link-main">
+                        https://www.youtube.com/watch?v=WRfFhZqc5gk
+                    </p>
+                    <h4 class="video-box-share-link-copy">
+                        Sao chép
+                    </h4>
+                </div>
+    
+                <div class="video-box-share-input">
+                    <input type="checkbox" name="" id="" class="share-input">
+                    <p class="video-box-share-input-title">Bắt đầu tại</p>
+                </div>
+            </div>          
+        </div>
+
+       
+        <!-- box_save khi click vào save -->
+        <div class="video_box-save">
+           <div class="video_box-save-content">
+                <div class="video_box-save-title">
+                    <h4 class="video_box-save-heading">
+                        Lưu vào...
+                    </h4>
+                    <i class="bx bx-x bxf-x bxf-x-save"></i>
+                </div>
+
+                <ul class="video_box-list-save">
+                    <li class="video_box-item-save">
+                        <div class="video_box-item-save-left">
+                            <input type="checkbox" name="" id="" class="video_box-save-input">
+                            <span class="video_box-save-input-desc">Xem sau</span>
+                        </div>
+
+                        <i class="bx bxs-lock bxf-lock"></i>
+                    </li>
+
+                    <li class="video_box-item-save">
+                        <div class="video_box-item-save-left">
+                            <input type="checkbox" name="" id="" class="video_box-save-input">
+                            <span class="video_box-save-input-desc">Xem sau</span>
+                        </div>
+
+                        <i class="bx bxs-lock bxf-lock"></i>
+                    </li>
+
+                    <li class="video_box-item-save">
+                        <div class="video_box-item-save-left">
+                            <input type="checkbox" name="" id="" class="video_box-save-input">
+                            <span class="video_box-save-input-desc">Xem sau</span>
+                        </div>
+
+                        <i class="bx bxs-lock bxf-lock"></i>
+                    </li>
+                </ul>
+
+                <div class="video_box-new-list">
+                    <i class="bx bx-plus bxf-plus"></i>
+                    <span>Tạo danh sách phát mới</span>
+                </div>
+
+                <ul class="video_box-new-list-down">
+                    <li class="video_box-new-item-down">
+                        <div class="video_box-new-input">
+                            <label for="" style="font-size: 1.4rem; color: var(--black-color); font-family: 'roboto','sans-serif';">Tên</label>
+                            <input type="text" name="" id="" placeholder="Nhập tên danh sách phát..." class="video_box-new-input-main">
+                            <label for="" style="font-size: 1.4rem; align-self: flex-end;">0/150</label>
+                        </div>
+                    </li>
+
+                    <li class="video_box-new-item-down">
+                        <div class="video_box-new-select">
+                            <label for="" style="color: var(--main-color); font-size: 1.4rem;">Quyền riêng tư</label>
+                            <select name="" id="" style="font-size: 1.4rem; border: none">
+                                <option value="">Công khai</option>
+                                <option value="">Không công khai</option>
+                                <option value="">Riêng tư</option>
+                            </select>
+                        </div>
+                    </li>
+
+                    <li class="video_box-new-item-down">
+                       <h4>Tạo</h4>
+                    </li>
+                </ul>
+           </div>
+        </div>
+
+
+        <!-- box subscribe khi click vào unscribe -->
+        <div class="video_box-subscribe">
+            <div class="video_box-subscribe-title">
+               <p>Hủy đăng ký F8 Official ?</p>
+            </div>
+
+            <div class="video_box-subscribe-select">
+                <div class="video_box-subscribe-select-left">
+                    <p class="video_box-subscribe-select-close">Hủy</p>
+                </div>
+
+                <div class="video_box-subscribe-select-right">
+                    <p class="video_box-subscribe-select-un-scribe">Hủy đăng ký</p>
+                </div>
+            </div>
+        </div>
+
     
     <script src="./video.js"></script>
 </body>
