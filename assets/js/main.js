@@ -5,163 +5,164 @@ const $$ = document.querySelectorAll.bind(document);
 function renderVideos() {
     const listVideos = [
         {
-            avatar: 'Đi_Đi_Đi.jpg',
+            linkVideo: './list-videos/video1.html',
+            avatar: 'video1.jpg',
+            time: '0:17',
+            channelAvatar: 'f8-myfavourite.jpg',
+            title: 'F8 có gì mới trong lần trở lại này ?',
+            author: 'F8 Official',
+            view: '8 N lượt xem',
+            date: '1 tháng trước'
+        },
+
+        {
+            avatar: 'video2.jpg',
+            time: '6:35',
+            channelAvatar: 'f8-myfavourite.jpg',
+            title: 'Lần trở lại này F8 sẽ làm gì cho các bạn? Học lập trình để đi làm tại F8 nào!',
+            author: 'F8 Official',
+            view: '12 N lượt xem',
+            date: '1 tháng trước'
+        },
+
+        {
+            avatar: 'video3.jpg',
+            time: '15:44',
+            channelAvatar: 'f8-myfavourite.jpg',
+            title: 'F8 SẬP? MÌNH ĐÃ FIX NHƯ THẾ NÀO? - FIX BUGS IN THE HOSPITAL',
+            author: 'F8 Official',
+            view: '20 N lượt xem',
+            date: '24 ngày trước'
+        },
+
+        {
+            avatar: 'video4.png',
+            time: '34:51',
+            channelAvatar: 'f8-myfavourite.jpg',
+            title: 'Sinh viên IT đi thực tập cần biết những gì? | Đi thực tập cần chuẩn bị những gì? | Thực tập IT',
+            author: 'F8 Official',
+            view: '98 N lượt xem',
+            date: '8 tháng trước'
+        },
+
+        {
+            avatar: 'video5.png',
+            time: '10:35',
+            channelAvatar: 'tuan-can.jpg',
+            title: 'Cung Đường Hòa Lạc Hòa Bình Dành Cho Biker Mê Tốc Độ',
+            author: 'Tuấn Cận Vlog',
+            view: '4,2 Tr lượt xem',
+            date: '2 tháng trước'
+        },
+
+        {
+            avatar: 'video6.jpg',
+            time: '10:44',
+            channelAvatar: 'minh-bup-be.jpg',
+            title: 'Tik Tok Phượt - Đi Để Biết Ta Là Ai Trong Cuộc Đời | Minh Motor',
+            author: 'Minh Búp Bê',
+            view: '136 N lượt xem',
+            date: '2 năm trước'
+        },
+
+        {
+            avatar: 'video7.png',
+            time: '7:54',
+            channelAvatar: 'A_navu.jpg',
+            title: 'Lần đầu chạy thử Kawasaki Ninja H2 - Phê hết nước chấm | Navu Vlog',
+            author: 'Navu Vlog',
+            view: '59 N lượt xem',
+            date: '2 tháng trước'
+        },
+
+        {
+            avatar: 'video8.jpg',
+            time: '17:27',
+            channelAvatar: 'le-gia-huy.jpg',
+            title: 'Thử Thách Ôm Cua Không Lấn Lane Đèo Omega',
+            author: 'Lê Gia Huy',
+            view: '39 N lượt xem',
+            date: '5 ngày trước'
+        },
+
+        {
+            avatar: 'video9.jpg',
             time: '4:59',
             channelAvatar: 'K-ICM.jpg',
             title: 'Đi Đi Đi - Xách ba lô lên và đi (Cuộc sống được bao lâu mà bạn phải chờ đợi)',
             author: 'K-ICM Official',
-            view: '5,3Tr lượt xem',
+            view: '5,3 Tr lượt xem',
             date: '3 năm trước'
         },
 
         {
-            avatar: 'Đi_Đi_Đi.jpg',
-            time: '4:59',
-            channelAvatar: 'K-ICM.jpg',
-            title: 'Đi Đi Đi - Xách ba lô lên và đi (Cuộc sống được bao lâu mà bạn phải chờ đợi)',
-            author: 'K-ICM Official',
-            view: '5,3Tr lượt xem',
-            date: '3 năm trước'
+            avatar: 'video10.jpg',
+            time: '5:30',
+            channelAvatar: 'tik_tokNH.jpg',
+            title: 'Ngẫu hứng-Bóng Tối Trước Bình Minh Remix (DJ QT Mix) Trai xinh gái đẹp trong Bar',
+            author: 'TikTok QT - Dj QT',
+            view: '2,9 Tr lượt xem',
+            date: '2 năm trước'
         },
 
         {
-            avatar: 'Đi_Đi_Đi.jpg',
-            time: '4:59',
-            channelAvatar: 'K-ICM.jpg',
-            title: 'Đi Đi Đi - Xách ba lô lên và đi (Cuộc sống được bao lâu mà bạn phải chờ đợi)',
-            author: 'K-ICM Official',
-            view: '5,3Tr lượt xem',
-            date: '3 năm trước'
+            avatar: 'video11.jpg',
+            time: '5:46',
+            channelAvatar: 'HoaNguyen_Official.jpg',
+            title: 'Đại Thiên Bồng - Lộ Gia | 大天蓬 - 璐爷 (DJ 阿超 Remix) Cổ Phong Thần Khúc - TikTok',
+            author: 'Hoa Nguyễn Official',
+            view: '3,4 Tr lượt xem',
+            date: '8 tháng trước'
         },
 
         {
-            avatar: 'Đi_Đi_Đi.jpg',
-            time: '4:59',
-            channelAvatar: 'K-ICM.jpg',
-            title: 'Đi Đi Đi - Xách ba lô lên và đi (Cuộc sống được bao lâu mà bạn phải chờ đợi)',
-            author: 'K-ICM Official',
-            view: '5,3Tr lượt xem',
-            date: '3 năm trước'
+            avatar: 'video12.jpg',
+            time: '3:32',
+            channelAvatar: 'Alan_Walker.jpg',
+            title: 'Alan Walker - Faded',
+            author: 'Alan Walker',
+            view: '3,1 T lượt xem',
+            date: '5 năm trước'
         },
 
         {
-            avatar: 'Đi_Đi_Đi.jpg',
-            time: '4:59',
-            channelAvatar: 'K-ICM.jpg',
-            title: 'Đi Đi Đi - Xách ba lô lên và đi (Cuộc sống được bao lâu mà bạn phải chờ đợi)',
-            author: 'K-ICM Official',
-            view: '5,3Tr lượt xem',
-            date: '3 năm trước'
+            avatar: 'video13.jpg',
+            time: '11:59',
+            channelAvatar: 'k+_plus.jpg',
+            title: 'WEST HAM - LEICESTER | ANTONIO TỎA SÁNG, BÚA TẠ ĐẬP NÁT BẦY CÁO TẠI LONDON | NGOẠI HẠNG ANH 2021/22',
+            author: 'K-plus Sports',
+            view: '666 N lượt xem',
+            date: '1 ngày trước'
         },
 
         {
-            avatar: 'Đi_Đi_Đi.jpg',
-            time: '4:59',
-            channelAvatar: 'K-ICM.jpg',
-            title: 'Đi Đi Đi - Xách ba lô lên và đi (Cuộc sống được bao lâu mà bạn phải chờ đợi)',
-            author: 'K-ICM Official',
-            view: '5,3Tr lượt xem',
-            date: '3 năm trước'
+            avatar: 'video14.jpg',
+            time: '32:42',
+            channelAvatar: 'cam_bong_da.jpg',
+            title: 'Ngôi đền huyền thoại | LIONEL MESSI (Phần 3)',
+            author: 'Cảm bóng đá',
+            view: '196 N lượt xem',
+            date: '5 ngày trước'
         },
 
         {
-            avatar: 'Đi_Đi_Đi.jpg',
-            time: '4:59',
-            channelAvatar: 'K-ICM.jpg',
-            title: 'Đi Đi Đi - Xách ba lô lên và đi (Cuộc sống được bao lâu mà bạn phải chờ đợi)',
-            author: 'K-ICM Official',
-            view: '5,3Tr lượt xem',
-            date: '3 năm trước'
+            avatar: 'video15.jpg',
+            time: '8:09',
+            channelAvatar: 'tuyen_van_hoa.jpg',
+            title: 'TIN TRƯA 7/8 | MESSI VỀ VỚI PSG ĐỂ GIEO ÁC MỘNG CHO MỌI ĐỘI BÓNG TRÊN TOÀN THẾ GIỚI',
+            author: 'Tuyền Văn Hóa',
+            view: '360 N lượt xem',
+            date: '18 ngày trước'
         },
 
         {
-            avatar: 'Đi_Đi_Đi.jpg',
-            time: '4:59',
-            channelAvatar: 'K-ICM.jpg',
-            title: 'Đi Đi Đi - Xách ba lô lên và đi (Cuộc sống được bao lâu mà bạn phải chờ đợi)',
-            author: 'K-ICM Official',
-            view: '5,3Tr lượt xem',
-            date: '3 năm trước'
-        },
-
-        {
-            avatar: 'Đi_Đi_Đi.jpg',
-            time: '4:59',
-            channelAvatar: 'K-ICM.jpg',
-            title: 'Đi Đi Đi - Xách ba lô lên và đi (Cuộc sống được bao lâu mà bạn phải chờ đợi)',
-            author: 'K-ICM Official',
-            view: '5,3Tr lượt xem',
-            date: '3 năm trước'
-        },
-
-        {
-            avatar: 'Đi_Đi_Đi.jpg',
-            time: '4:59',
-            channelAvatar: 'K-ICM.jpg',
-            title: 'Đi Đi Đi - Xách ba lô lên và đi (Cuộc sống được bao lâu mà bạn phải chờ đợi)',
-            author: 'K-ICM Official',
-            view: '5,3Tr lượt xem',
-            date: '3 năm trước'
-        },
-
-        {
-            avatar: 'Đi_Đi_Đi.jpg',
-            time: '4:59',
-            channelAvatar: 'K-ICM.jpg',
-            title: 'Đi Đi Đi - Xách ba lô lên và đi (Cuộc sống được bao lâu mà bạn phải chờ đợi)',
-            author: 'K-ICM Official',
-            view: '5,3Tr lượt xem',
-            date: '3 năm trước'
-        },
-
-        {
-            avatar: 'Đi_Đi_Đi.jpg',
-            time: '4:59',
-            channelAvatar: 'K-ICM.jpg',
-            title: 'Đi Đi Đi - Xách ba lô lên và đi (Cuộc sống được bao lâu mà bạn phải chờ đợi)',
-            author: 'K-ICM Official',
-            view: '5,3Tr lượt xem',
-            date: '3 năm trước'
-        },
-
-        {
-            avatar: 'Đi_Đi_Đi.jpg',
-            time: '4:59',
-            channelAvatar: 'K-ICM.jpg',
-            title: 'Đi Đi Đi - Xách ba lô lên và đi (Cuộc sống được bao lâu mà bạn phải chờ đợi)',
-            author: 'K-ICM Official',
-            view: '5,3Tr lượt xem',
-            date: '3 năm trước'
-        },
-
-        {
-            avatar: 'Đi_Đi_Đi.jpg',
-            time: '4:59',
-            channelAvatar: 'K-ICM.jpg',
-            title: 'Đi Đi Đi - Xách ba lô lên và đi (Cuộc sống được bao lâu mà bạn phải chờ đợi)',
-            author: 'K-ICM Official',
-            view: '5,3Tr lượt xem',
-            date: '3 năm trước'
-        },
-
-        {
-            avatar: 'Đi_Đi_Đi.jpg',
-            time: '4:59',
-            channelAvatar: 'K-ICM.jpg',
-            title: 'Đi Đi Đi - Xách ba lô lên và đi (Cuộc sống được bao lâu mà bạn phải chờ đợi)',
-            author: 'K-ICM Official',
-            view: '5,3Tr lượt xem',
-            date: '3 năm trước'
-        },
-
-        {
-            avatar: 'Đi_Đi_Đi.jpg',
-            time: '4:59',
-            channelAvatar: 'K-ICM.jpg',
-            title: 'Đi Đi Đi - Xách ba lô lên và đi (Cuộc sống được bao lâu mà bạn phải chờ đợi)',
-            author: 'K-ICM Official',
-            view: '5,3Tr lượt xem',
-            date: '3 năm trước'
+            avatar: 'video16.jpg',
+            time: '25:58',
+            channelAvatar: 'man_nhan_tv.jpg',
+            title: 'Khoảnh khắc lịch sử - Messi thâu tóm mọi danh hiệu cá nhân - ăn mừng chức vô địch Copa 2021',
+            author: 'MÃN NHÃN TV',
+            view: '883 N lượt xem',
+            date: '1 tháng trước'
         },
 
 
@@ -174,7 +175,7 @@ function renderVideos() {
         video += `
                         <div class="col-3 col-video-mb add-video-translateX product_video-X">
                             <div class="product_video">
-                                <a href="" class="product_video-link">
+                                <a href="${getVideo.linkVideo}" class="product_video-link">
                                     <div class="product_video-img">
                                         <img  src="./assets/img/${getVideo.avatar}" alt="Avatar Video" class="product_video-img-main product_video-img-main-X">
                                         <span class="product_video-img-time">${getVideo.time}</span>
