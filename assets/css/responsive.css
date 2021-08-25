@@ -30,16 +30,16 @@
     }
 
     .product_video-title h4 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     .product_video_user-name {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .product_video-info-view,
     .product_video-info-date {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .product_video_user-verified {
@@ -149,8 +149,13 @@
     }
 
     .product_video-title h4 {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         width: 55%;
+    }
+
+    .active.user_down,
+    .active.bell_down  {
+        display: none;
     }
 }
 
@@ -175,7 +180,7 @@
     }
 
     .product_video-title h4 {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
         width: 55%;
     }
 }
@@ -189,7 +194,15 @@
     }
 
     .product_video-title h4 {
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         width: 55%;
+    }
+
+    .product_video_user-name {
+        font-size: 1.3rem;
+    }
+
+    .product_video-info-view, .product_video-info-date {
+        font-size: 1.3rem;
     }
 }
