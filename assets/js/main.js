@@ -16,6 +16,7 @@ function renderVideos() {
         },
 
         {
+            linkVideo: './list-videos/video2.html',
             avatar: 'video2.jpg',
             time: '6:35',
             channelAvatar: 'f8-myfavourite.jpg',
@@ -26,6 +27,7 @@ function renderVideos() {
         },
 
         {
+            linkVideo: './list-videos/video3.html',
             avatar: 'video3.jpg',
             time: '15:44',
             channelAvatar: 'f8-myfavourite.jpg',
@@ -36,6 +38,7 @@ function renderVideos() {
         },
 
         {
+            linkVideo: './list-videos/video4.html',
             avatar: 'video4.png',
             time: '34:51',
             channelAvatar: 'f8-myfavourite.jpg',
@@ -46,6 +49,7 @@ function renderVideos() {
         },
 
         {
+            linkVideo: './list-videos/video5.html',
             avatar: 'video5.png',
             time: '10:35',
             channelAvatar: 'tuan-can.jpg',
@@ -56,6 +60,7 @@ function renderVideos() {
         },
 
         {
+            linkVideo: './list-videos/video6.html',
             avatar: 'video6.jpg',
             time: '10:44',
             channelAvatar: 'minh-bup-be.jpg',
@@ -66,6 +71,7 @@ function renderVideos() {
         },
 
         {
+            linkVideo: './list-videos/video7.html',
             avatar: 'video7.png',
             time: '7:54',
             channelAvatar: 'A_navu.jpg',
@@ -76,6 +82,7 @@ function renderVideos() {
         },
 
         {
+            linkVideo: './list-videos/video8.html',
             avatar: 'video8.jpg',
             time: '17:27',
             channelAvatar: 'le-gia-huy.jpg',
@@ -86,6 +93,7 @@ function renderVideos() {
         },
 
         {
+            linkVideo: './list-videos/video9.html',
             avatar: 'video9.jpg',
             time: '4:59',
             channelAvatar: 'K-ICM.jpg',
@@ -96,6 +104,7 @@ function renderVideos() {
         },
 
         {
+            linkVideo: './list-videos/video10.html',
             avatar: 'video10.jpg',
             time: '5:30',
             channelAvatar: 'tik_tokNH.jpg',
@@ -106,6 +115,7 @@ function renderVideos() {
         },
 
         {
+            linkVideo: './list-videos/video11.html',
             avatar: 'video11.jpg',
             time: '5:46',
             channelAvatar: 'HoaNguyen_Official.jpg',
@@ -116,16 +126,18 @@ function renderVideos() {
         },
 
         {
+            linkVideo: './list-videos/video12.html',
             avatar: 'video12.jpg',
             time: '3:32',
             channelAvatar: 'Alan_Walker.jpg',
-            title: 'Alan Walker - Faded',
+            title: 'Alan Walker - Faded (Bản nhạc hay nhất thế giới)',
             author: 'Alan Walker',
             view: '3,1 T lượt xem',
             date: '5 năm trước'
         },
 
         {
+            linkVideo: './list-videos/video13.html',
             avatar: 'video13.jpg',
             time: '11:59',
             channelAvatar: 'k+_plus.jpg',
@@ -136,6 +148,7 @@ function renderVideos() {
         },
 
         {
+            linkVideo: './list-videos/video14.html',
             avatar: 'video14.jpg',
             time: '32:42',
             channelAvatar: 'cam_bong_da.jpg',
@@ -146,6 +159,7 @@ function renderVideos() {
         },
 
         {
+            linkVideo: './list-videos/video15.html',
             avatar: 'video15.jpg',
             time: '8:09',
             channelAvatar: 'tuyen_van_hoa.jpg',
@@ -156,6 +170,7 @@ function renderVideos() {
         },
 
         {
+            linkVideo: './list-videos/video16.html',
             avatar: 'video16.jpg',
             time: '25:58',
             channelAvatar: 'man_nhan_tv.jpg',
@@ -215,20 +230,22 @@ function renderVideos() {
                                                 <h4>${getVideo.title}</h4>
                                             </div>
 
-                                            <div class="product_video_user-chanel">
-                                                <span class="product_video_user-name">${getVideo.author}</span>
-                                                <span class="product_video_user-verified">
-                                                    <i class="bx bxs-check-circle"></i>
-                                                </span>
-                                            </div>
+                                          <div class="product_video-user-channel-content">
+                                                <div class="product_video_user-chanel">
+                                                    <span class="product_video_user-name">${getVideo.author}</span>
+                                                    <span class="product_video_user-verified">
+                                                        <i class="bx bxs-check-circle"></i>
+                                                    </span>
+                                                </div>
 
-                                            <div class="product_video-info">
-                                                <span class="product_video-info-view">${getVideo.view}</span>
-                                                <span class="product_video-info-dot">
-                                                    <i class="fas fa-circle"></i>
-                                                </span>
-                                                <span class="product_video-info-date">${getVideo.date}</span>
-                                            </div>
+                                                <div class="product_video-info">
+                                                    <span class="product_video-info-view">${getVideo.view}</span>
+                                                    <span class="product_video-info-dot">
+                                                        <i class="fas fa-circle"></i>
+                                                    </span>
+                                                    <span class="product_video-info-date">${getVideo.date}</span>
+                                                </div>
+                                          </div>
 
                                             <div class="product_video-option">
                                                 <i class="bx bx-dots-vertical-rounded bxf-dots-vertical-rounded-video"></i>

@@ -126,7 +126,7 @@
   align-items: center;
   list-style: none;
   padding: 8px 0;
-  margin: 0 0 0 9px;
+  margin: -2px 0 2px 9px;
 }
 
 .container_scroll-list-fix-navbar {
@@ -421,6 +421,10 @@
   overflow: hidden;
   margin: 0;
   padding-right: 16px;
+}
+
+.product_video-user-channel-content {
+  min-height: 50px;
 }
 
 .product_video_user-chanel {
