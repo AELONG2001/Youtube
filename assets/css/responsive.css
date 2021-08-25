@@ -135,6 +135,10 @@
         height: 48px;
    }
 
+   .header_list-right {
+       margin-right: -20px;
+   }
+
    .slider_container_scroll {
         margin: 46px 0 0 calc((var(--width-slider-bar)) + (-240px));
     }
