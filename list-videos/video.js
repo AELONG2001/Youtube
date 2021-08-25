@@ -743,3 +743,16 @@ closeBoxResponseFive.addEventListener('click', () => {
     boxResponseFive.style.display = 'none';
 });
 
+
+// fix bug htt
+const fixHttHeight = $('.video-click-htt');
+const heightVideo = $('.container-video');
+
+fixHttHeight.addEventListener('click', () => {
+    heightVideo.style.height = '2500px';
+});
+
+
+arrowDownList.addEventListener('click', () => {
+    heightVideo.style.height = '2500px';
+});
