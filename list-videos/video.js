@@ -749,10 +749,10 @@ const fixHttHeight = $('.video-click-htt');
 const heightVideo = $('.container-video');
 
 fixHttHeight.addEventListener('click', () => {
-    heightVideo.style.height = '2500px';
+    heightVideo.style.height = '5000px';
 });
 
 
 arrowDownList.addEventListener('click', () => {
-    heightVideo.style.height = '2500px';
+    heightVideo.style.height = '5000px';
 });
