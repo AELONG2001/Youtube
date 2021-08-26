@@ -89,6 +89,10 @@
         cursor: pointer;
     }
 
+    .active.videos_list-down {
+      margin-left: -32px;
+    }
+
     iframe {
         height: 262px;
     }
