@@ -79,8 +79,14 @@
 
     .input-search,
     .btn-keyboard,
-    .btn-search  {
+    .btn-search,
+    .item-grid  {
         display: none;
+    }
+
+    .header_list-right .list_right-item {
+        padding: 2px;
+        cursor: pointer;
     }
 
     iframe {

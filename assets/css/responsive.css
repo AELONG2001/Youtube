@@ -32,6 +32,15 @@
         width: 100%;
     }
 
+    .videos-icon-play {
+        position: absolute;
+        top: 35%;
+        right: 67%;
+    }
+
+    .bxf-dots-vertical-rounded-video {
+        transform: translateX(320px);
+    }
 
     .product_video-img-main {
         width: 668px;
