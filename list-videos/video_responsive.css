@@ -165,8 +165,8 @@
 
     .btn-up-bell,
     .btn-down-bell {
-        top: 0;
-        left: 0px;
+        top: -1px;
+        left: -1px;
     }
 
     .border_user-avatar {
