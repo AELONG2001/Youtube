@@ -145,6 +145,11 @@
     .modal_mic-content {
         left: 11%;
     }
+
+    .btn-up,
+    .btn-down {
+      left: 6px;
+    }
  
     .btn-up-videos,
     .btn-down-videos {
