@@ -24,6 +24,29 @@
         width: 100px;
         transform: translateX(6px);
     }
+
+    .video_box-share {
+        width: 411px;
+        height: 320px;
+        top: 25%;
+        left: 0%;
+    }
+
+    .video-box-list-social {
+        margin: 10px;
+        margin: 0 -6px;
+    }
+
+    .video_box-save {
+        width: 250px;
+        top: 35%;
+        left: 20%;
+    }
+
+    .video_info-social-list-report {
+        transform: translate(50%, 30px);
+    }
+
  
  }
  
