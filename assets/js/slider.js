@@ -88,7 +88,6 @@ function slider() {
 
                  listOption.style.transform = `translateX(${updateValue + walk}px)`;
 
-                 //handle when the user drags all the way to the left(Khi người dùng kéo tất cả sang trái)
                  if(parseValue(listOption.style.transform) <= distance) {
                      startX = x;
                      updateValue = distance;
@@ -152,7 +151,7 @@ function slider() {
              }
 
              updateValue = parseValue(listOption.style.transform);
-             scrollLft = 0;
+             scrollLeft = 0;
              show(prevBtn);
          });
 
