@@ -154,8 +154,8 @@
 
     .btn-up-grid,
     .btn-down-grid {
-      top: 0;
-      left: 0;
+      top: -1px;
+      left: -1px;
     }
 
     .btn-up-bell,
