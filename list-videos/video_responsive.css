@@ -159,8 +159,8 @@
  
     .btn-up-videos,
     .btn-down-videos {
-        top: -2px;
-        left: -2px;
+        top: -1px;
+        left: -1px;
     }
 
     .btn-up-grid,
@@ -177,7 +177,7 @@
 
     .border_user-avatar {
         top: 14px;
-        right: 14px;
+        right: 16px;
     }
  }
  
@@ -216,7 +216,7 @@
 
     .border_user-avatar {
         top: 14px;
-        right: 12px;
+        right: 14px;
     }
  }
  
@@ -277,8 +277,8 @@
     }
 
     .border_user-avatar {
-        top: 15px;
-        right: 10px;
+        top: 14px;
+        right: 12px;
     }
     
  }
