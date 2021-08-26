@@ -8,6 +8,22 @@
        display: none;
    }
 
+   .modal_mic-content {
+       left: 11%;
+   }
+
+   .btn-up-videos,
+   .btn-down-videos {
+       top: 1px;
+       left: 0;
+   }
+
+   .btn-up-bell,
+   .btn-down-bell {
+       top: 0;
+       left: 1px;
+   }
+
    .scroll-when-click {
        transform: translateX(-221px);
     } 
@@ -138,6 +154,23 @@
    .header_list-right {
        margin-right: -20px;
    }
+
+   
+   .btn-up-videos, .btn-down-videos {
+    top: 7px;
+    left: 6px;
+   }
+
+   .btn-up-bell, .btn-down-bell {
+    top: 6px;
+    left: 7px;
+   }
+
+   .border_user-avatar {
+       top: 10px;
+       right: 10px;
+   }
+
 
    .slider_container_scroll {
         margin: 46px 0 0 calc((var(--width-slider-bar)) + (-240px));
