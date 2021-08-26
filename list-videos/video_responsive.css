@@ -33,7 +33,6 @@
     }
 
     .video-box-list-social {
-        margin: 10px;
         margin: 0 -6px;
     }
 
@@ -142,7 +141,33 @@
     .active.bell_down {
         display: none;
     }
+
+    .modal_mic-content {
+        left: 11%;
+    }
  
+    .btn-up-videos,
+    .btn-down-videos {
+        top: -2px;
+        left: -2px;
+    }
+
+    .btn-up-grid,
+    .btn-down-grid {
+      top: 0;
+      left: 0;
+    }
+
+    .btn-up-bell,
+    .btn-down-bell {
+        top: 0;
+        left: 0px;
+    }
+
+    .border_user-avatar {
+        top: 14px;
+        right: 14px;
+    }
  }
  
  
@@ -168,6 +193,19 @@
 
     .header_list-right {
         margin-right: -18px;
+    }
+
+    .video_box-share {
+        width: 382px;
+    }
+
+    .video-box-list-social {
+        margin: 0 -12px;
+    }
+
+    .border_user-avatar {
+        top: 14px;
+        right: 12px;
     }
  }
  
@@ -216,4 +254,20 @@
     .active.grid_down {
         display: none;
     }
+
+    .video_box-share-change.video_box-share {
+        display: none;
+    }
+
+    .video_box-save {
+        width: 250px;
+        top: 18%;
+        left: 11%;
+    }
+
+    .border_user-avatar {
+        top: 15px;
+        right: 10px;
+    }
+    
  }
