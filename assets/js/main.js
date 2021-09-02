@@ -540,4 +540,12 @@ listUserDown.addEventListener('click', (e) => {
 });
 
 
+const bellDownScroll = $('.bell_down');
+const htmlScroll = $('html');
+
+bellDownScroll.addEventListener('scroll', (e) => {
+    e.preventDefault();
+})
+
+
        
