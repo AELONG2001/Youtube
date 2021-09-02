@@ -8,12 +8,29 @@
   opacity: 0;
   transform: translateX(-100%);
   transition: all 0.2s linear;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
+
+.slider_bar-video::-webkit-scrollbar{
+  width: 4px;
+}
+
+.slider_bar-video::-webkit-scrollbar-thumb{
+  display: none;
+  background-color: #ccc;
+}
+
+.slider_bar-video:hover::-webkit-scrollbar-thumb{
+  display: block;
+}
+
 
 .slider_bar-video-click {
   opacity: 1;
   transform: translateX(0);
 }
+
 
 .overlay {
   position: fixed;
